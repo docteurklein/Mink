@@ -60,18 +60,6 @@ abstract class Element implements ElementInterface
     }
 
     /**
-     * Returns element session.
-     *
-     * @return Session
-     *
-     * @deprecated Accessing the session from the element is deprecated as of 1.6 and will be impossible in 2.0.
-     */
-    public function getSession()
-    {
-        return $this->session;
-    }
-
-    /**
      * Returns element's driver.
      *
      * @return DriverInterface
@@ -79,18 +67,6 @@ abstract class Element implements ElementInterface
     protected function getDriver()
     {
         return $this->driver;
-    }
-
-    /**
-     * Returns selectors handler.
-     *
-     * @return SelectorsHandler
-     *
-     * @deprecated Accessing the selectors handler in the element is deprecated as of 1.7 and will be impossible in 2.0.
-     */
-    protected function getSelectorsHandler()
-    {
-        return $this->selectorsHandler;
     }
 
     /**
